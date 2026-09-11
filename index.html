@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>フォルダ参照イメージビューアー — サポート</title>
+<meta name="description" content="フォルダ参照イメージビューアーのサポートページ。よくある質問とお問い合わせ先。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div class="topline">
+      <span class="appname">Folder Image Viewer</span>
+      <div class="langswitch" role="group" aria-label="Language">
+        <button id="btn-ja" type="button" aria-pressed="true">日本語</button>
+        <button id="btn-en" type="button" aria-pressed="false">EN</button>
+      </div>
+    </div>
+    <div id="head-ja">
+      <h1>サポート</h1>
+      <div class="meta"><span>フォルダ参照イメージビューアー</span><span>iOS / iPadOS</span></div>
+    </div>
+    <div id="head-en" hidden>
+      <h1>Support</h1>
+      <div class="meta"><span>Folder Image Viewer</span><span>iOS / iPadOS</span></div>
+    </div>
+  </header>
+
+  <div id="body-ja">
+    <div class="lede">
+      端末やクラウドにあるフォルダを、<strong>コピーせずそのまま</strong>一覧して見るビューアーです。PDFの専門書、写真、スキャンした資料などにお使いいただけます。
+      以下によくあるご質問をまとめています。解決しない場合は、ページ下部よりお問い合わせください。
+    </div>
+
+    <div class="clauses">
+      <section class="clause">
+        <h2><span class="num">Q1</span>対応している画像形式を教えてください</h2>
+        <p>画像は JPEG（.jpg / .jpeg）、PNG、WebP、文書は PDF に対応しています。HEIC などの形式には現在対応していません。</p>
+        <p>PDFはフォルダの中にあると1ファイル＝1冊として一覧に並び、タップするとそのままページを送れます。アプリ内への取り込みや変換は行いません。パスワードで保護されたPDFには対応していません。</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q2</span>OneDrive や Box が選択できません</h2>
+        <p>「参照先を変更」でフォルダピッカーを開いたとき、OneDrive や Box などが灰色になって選べないことがあります。これは本アプリの不具合ではなく、iOS のフォルダ選択機能に対して各クラウドサービス側がまだ対応していないために起こるもので、アプリ側からは回避できません。</p>
+        <p>その場合は、フォルダの代わりに <strong>「ファイルを追加」</strong>（書類アイコン）をお使いください。画像ファイルを複数選んで、ひとつのフォルダのようにまとめて登録できます。この方法であればどのクラウドサービスでもご利用いただけます。</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q3</span>画像はアプリの中にコピーされますか</h2>
+        <p>いいえ。本アプリは元のファイルを参照して表示するだけで、アプリ内部に取り込むことはありません。端末の空き容量が二重に消費されることはなく、フォルダを整理すれば表示もそのまま追従します。</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q4</span>元のフォルダを移動・削除したらどうなりますか</h2>
+        <p>参照できなくなったフォルダは一覧から外れ、その旨をお知らせします。元のファイルが削除されるわけではありません。フォルダを移動した場合は、「参照先を変更」から選び直してください。</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q5</span>参照できるフォルダは1つだけですか</h2>
+        <p>参照するルートフォルダは1つです。ただし、そのフォルダの下にある画像入りのサブフォルダはすべて自動的に検出され、フォルダごとに並びます。別のフォルダを選ぶと参照先が置き換わります。</p>
+        <p>これとは別に、「ファイルを追加」で個別に登録したものは、参照先を変更しても残ります。</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q6</span>画像の順番が意図したとおりになりません</h2>
+        <p>画像はファイル名の数字順に並びます（1.jpg, 2.jpg, 3.jpg …）。数字以外の名前の場合は名前順になります。<code>01.jpg</code> のように桁を揃えていただくと確実です。</p>
+        <p>なお、並び替え設定はフォルダの並び順にのみ適用され、フォルダ内の画像の順序が変わることはありません。</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q7</span>見た位置が他の端末と同期しません</h2>
+        <p>同期には iCloud を使用します。端末の「設定 > Apple ID > iCloud」で iCloud Drive が有効になっているかをご確認ください。同期されるのは表示位置と設定のみで、画像そのものは同期されません。</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q8</span>無料で使える期間について教えてください</h2>
+        <p>インストール後7日間は、すべての機能を無料でお使いいただけます。7日を過ぎた後も継続してご利用になる場合は、¥450 の買い切り購入が必要です。月額・年額の課金は一切ありません。</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q9</span>機種変更をしました。買い直しが必要ですか</h2>
+        <p>不要です。購入時と同じ Apple ID でサインインしていれば、購入画面の「購入を復元」から再度アンロックできます。</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q10</span>画像が読み込まれるまで時間がかかります</h2>
+        <p>クラウド上のファイルは、実際に開いたときに端末へダウンロードされます。一覧画面では表紙の1枚だけを読み込み、残りはフォルダを開いてから読み込む設計のため、初回のみ通信状況によって時間がかかることがあります。一度読み込んだ画像は、以降は速く表示されます。</p>
+      </section>
+    </div>
+
+    <div class="contact">
+      <strong>お問い合わせ</strong>
+      <p>上記で解決しない場合は、以下までご連絡ください。不具合のご報告の際は、端末の機種・iOSのバージョン・発生した操作をお知らせいただけると助かります。</p>
+      <span class="addr"><a href="mailto:msa-setubisekkei@outlook.jp">msa-setubisekkei@outlook.jp</a></span>
+    </div>
+  </div>
+
+  <div id="body-en" hidden>
+    <div class="lede">
+      A viewer for the folders already on your device or in the cloud —
+      <strong>without copying anything</strong>. Technical PDFs, photos, scanned documents, and more.
+      Common questions are answered below; if none of them help, please get in touch at the bottom of this page.
+    </div>
+
+    <div class="clauses">
+      <section class="clause">
+        <h2><span class="num">Q1</span>Which image formats are supported?</h2>
+        <p>Images: JPEG (.jpg / .jpeg), PNG, and WebP. Documents: PDF. HEIC is not currently supported.</p>
+        <p>A PDF inside your folder appears as a single entry — one file, one volume — and opens straight into page turning. Nothing is converted or imported. Password-protected PDFs are not supported.</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q2</span>I can't select OneDrive or Box</h2>
+        <p>When you open the folder picker via "Change Source Folder", services such as OneDrive and Box may appear greyed out. This is not a fault in the app — those services have not yet adopted the iOS API required for folder selection, and the app cannot work around it.</p>
+        <p>Use <strong>"Add Files"</strong> (the document icon) instead. You can select several image files at once and register them as a single group. This works with any cloud service.</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q3</span>Are my images copied into the app?</h2>
+        <p>No. The app reads your original files in place and never imports them. Your storage is not consumed twice, and reorganising your folders is reflected immediately.</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q4</span>What happens if I move or delete the original folder?</h2>
+        <p>Folders that can no longer be reached are removed from the gallery and you are notified. Your original files are never deleted. If you moved a folder, simply re-select it via "Change Source Folder".</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q5</span>Can I reference more than one folder?</h2>
+        <p>One source folder at a time. Every subfolder containing images beneath it is detected automatically and listed as its own group. Choosing another folder replaces the current one.</p>
+        <p>Groups added individually via "Add Files" are separate and are kept when you change the source folder.</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q6</span>My images are in the wrong order</h2>
+        <p>Images follow the numbers in their file names (1.jpg, 2.jpg, 3.jpg …). Names without numbers fall back to alphabetical order. Zero-padding (<code>01.jpg</code>) is the most reliable.</p>
+        <p>The sort setting applies only to the order of folders in the gallery — it never changes the order inside them.</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q7</span>Reading position isn't syncing between devices</h2>
+        <p>Syncing uses iCloud. Check that iCloud Drive is enabled under Settings › Apple ID › iCloud. Only your position and preferences sync — never the images themselves.</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q8</span>How does the free period work?</h2>
+        <p>Everything is free for 7 days after install. To keep using the app after that, a one-time purchase of ¥450 unlocks it permanently. There are no subscriptions.</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q9</span>I got a new device — do I have to buy it again?</h2>
+        <p>No. As long as you are signed in with the same Apple ID, tap "Restore Purchase" on the purchase screen to unlock it again.</p>
+      </section>
+
+      <section class="clause">
+        <h2><span class="num">Q10</span>Images take a while to load</h2>
+        <p>Files stored in the cloud are downloaded when you actually open them. The gallery loads only the cover of each folder, and the rest load once you open it — so the first read may take a moment depending on your connection. Pages load quickly after that.</p>
+      </section>
+    </div>
+
+    <div class="contact">
+      <strong>Contact</strong>
+      <p>If none of the above helps, please get in touch. For bug reports, it helps to include your device model, iOS version, and what you were doing when the problem occurred.</p>
+      <span class="addr"><a href="mailto:msa-setubisekkei@outlook.jp">msa-setubisekkei@outlook.jp</a></span>
+    </div>
+  </div>
+
+  <footer>
+    <span id="foot-ja">フォルダ参照イメージビューアー — サポート ／ <a href="privacy.html">プライバシーポリシー</a></span>
+    <span id="foot-en" hidden>Folder Image Viewer — Support ／ <a href="privacy.html">Privacy Policy</a></span>
+  </footer>
+</div>
+<script src="lang.js"></script>
+</body>
+</html>
